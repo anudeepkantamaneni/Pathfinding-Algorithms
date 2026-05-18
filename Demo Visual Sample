@@ -1,0 +1,13 @@
+https://qiao.github.io/PathFinding.js/visual/ 
+
+It’s a very good classic pathfinding visualizer and still useful as a learning tool because it lets you draw obstacles, drag start and end nodes, choose multiple algorithms, and then watch the search animation step by step. The demo also exposes important options like diagonal movement, corner-crossing rules, bidirectional search, heuristic choice, and Jump Point Search, which makes it stronger than a basic beginner-only visualizer.
+
+What is good
+The biggest strength is that it is not limited to just one algorithm, since it includes A*, IDA*, BFS, Best-First Search, Dijkstra, Jump Point Search, Orthogonal Jump Point Search, and Trace in the same interface. That makes it excellent for comparing how search strategy changes node exploration, path quality, and speed across the same obstacle layout.
+
+Another strong point is the control depth: you can switch heuristics such as Manhattan, Euclidean, Octile, and Chebyshev, and also test constraints like diagonal motion and “Don’t Cross Corners,” which are important practical choices in grid-based path planning. That is why developers and hobbyists have used it as a playground for understanding algorithms like Jump Point Search more intuitively.
+
+What is weak
+The UI feels old compared with modern visualizers, and it focuses more on algorithm comparison than on realistic robot behavior. It does not present richer simulation concepts like weighted terrain zones, moving obstacles, replanning, bot animation personality, or robotics-specific motion constraints in the way a more advanced simulator would.
+
+It also looks more like a technical playground than a polished project showcase, so for GitHub presentation or portfolio use, a custom interface with better visuals and richer scenarios usually feels more impressive. In short, it is strong for algorithm study, but weaker for demonstrating a realistic autonomous robot system.
