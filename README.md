@@ -1,43 +1,44 @@
-# Pathfinding-Algorithms
-Interactive visualization and implementation of popular pathfinding and graph search algorithms in Python using PyGame.
-Pathfinding Bot Demo
-A GitHub-ready pathfinding visualizer that shows a bot moving from a start cell to a goal cell on a 2D grid.
+# Advanced Pathfinding Simulator
 
-Included algorithms
-A* search
+This is a Python + Pygame pathfinding project for robot-style navigation experiments.
 
-Dijkstra's algorithm
+## Features
+- A* search
+- Dijkstra search
+- BFS
+- Weighted terrain: road, sand, water
+- Moving obstacles
+- Automatic replanning when a moving obstacle blocks the current route
+- Complex default map with bottlenecks and detours
 
-Breadth-First Search (BFS)
+## Install
+```bash
+pip install -r requirements.txt
+```
 
-Features
-Interactive obstacle drawing
+## Run
+```bash
+python advanced_pathfinding_sim.py
+```
 
-Start and goal placement
+## Controls
+- `1` = A*
+- `2` = Dijkstra
+- `3` = BFS
+- `W` = wall tool
+- `E` = erase tool
+- `S` = sand terrain
+- `A` = water terrain
+- `R` = road terrain
+- `Q` = place start
+- `G` = place goal
+- `M` = load complex map
+- `X` = clear all
+- `C` = clear path marks
+- `D` = toggle dynamic obstacles mode
+- `SPACE` = run planner
 
-Animated search preview
-
-Animated bot movement on the final path
-
-Dark mode toggle
-
-No frameworks required
-
-Files
-pathfinding-bot-demo.html - complete visualizer in a single file
-
-How to run
-Download or clone this project.
-
-Open pathfinding-bot-demo.html in a browser.
-
-Pick an algorithm.
-
-Draw walls, set start and goal, then click Run preview.
-
-Best algorithm choice
-Use A* when you want the fastest practical shortest-path solution on a grid.
-
-Use BFS for unweighted grids when every move has the same cost.
-
-Use Dijkstra when you later plan to support weighted movement costs.
+## Notes
+- A* is the best default for fast grid planning.
+- Dijkstra becomes useful when terrain weights matter.
+- BFS is mainly useful when all movement costs are equal.
